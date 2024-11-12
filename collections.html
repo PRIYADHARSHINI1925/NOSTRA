@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOSTRA</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/6.6.0/simple-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="closeid">
+        <h3 class="bg-blue-500 p-3 text-center -mx-4 flex items-center justify-center gap-5">
+            <span>Sign Up and Get 20% OFF for Your First Order</span>
+            <p id="close" class="cursor-pointer">X</p>
+        </h3>
+    </div>
+    <section class="p-3 flex justify-between items-center">
+        <h3 class="text-3xl bg-white text-black p-3">Nostra</h3>
+        <ul class="flex-row gap-5 text-black hidden md:flex cursor-pointer">
+            <li>
+                <p class="side-navbar-link"><a href="./index.html">Home</a></p>
+            </li>
+            <li>
+                <p class="side-navbar-link"><a href="./index.html">New Arrival</a></p>
+            </li>
+            <li>
+                <p class="side-navbar-link"><a href="./index.html">Most Wanted</a></p>
+            </li>
+            <li>
+                <p class="side-navbar-link"><a href="./collections.html">Collections</a></p>
+            </li>
+            <li>
+                <p class="side-navbar-link"><a href="./contact.html">Contact Us</a></p>
+            </li>
+        </ul>
+    </section>
+    
+    <!-- Navbar -->
+    <section class="p-3 flex justify-center items-center">
+        <div class="product-section flex flex-col  items-center gap-5 w-full">
+            <!-- Search Form (Align to the left or right) -->
+            <form class="navbar-search flex justify-start items-center gap-2 w-full max-w-4xl">
+                <input type="search" placeholder="Search" class="border border-gray-300 p-2 rounded-l-md flex-1">
+                <i class="fa-solid fa-magnifying-glass text-gray-600 p-2 bg-gray-200 rounded-r-md"></i>
+            </form>
+    
+            <!-- Product Container -->
+            <div id="product-container" class="product-container flex gap-3 justify-center items-center mt-5"></div>
+        </div>
+    </section>
+    
+    
+ 
+    
+
+    <!-- Main Section -->
+    <section>
+        <div class="container mx-auto p-5 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Filter Section -->
+            <div class="filter-section bg-gray-100 p-5 rounded-lg">
+                <h1 class="text-xl font-semibold">OCCASION</h1>
+                <div>
+                    <input type="checkbox" name="tags" value="Casuals"> Casuals<br>
+                    <input type="checkbox" name="tags" value="formals"> Formals<br>
+                </div>
+
+                <h1 class="text-xl font-semibold mt-4">MODELS</h1>
+                <div>
+                    <input type="checkbox" name="tags" value="tops"> TOPS<br>
+                    <input type="checkbox" name="tags" value="shirts"> TSHIRTS<br>
+                    <input type="checkbox" name="tags" value="floralshirts"> FLORAL SHIRT<br>
+                </div>
+
+                <h1 class="text-xl font-semibold mt-4">ARRIVALS</h1>
+                <div>
+                    <input type="checkbox" name="tags" value="new"> New<br>
+                    <input type="checkbox" name="tags" value="old"> Old<br>
+                </div>
+            </div>
+
+            <!-- Vertical Line -->
+            <div class="vertical-line hidden md:block w-px bg-gray-300 mx-4"></div>
+
+            <!-- Products Section -->
+            
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section class="text-center py-10">
+        <h2 class="text-2xl font-bold">JOIN US NOW</h2>
+        <p class="text-xl mb-4">Signup for our email newsletter to get exclusive discounts, updates, and more!</p>
+        <div class="flex justify-center mb-4">
+            <input type="text" class="border border-black p-3 m-3 w-3/4 md:w-1/2" placeholder="Enter your email">
+        </div>
+        <button class="bg-black text-white p-2 text-xl font-bold cursor-pointer hover:bg-gray-800 transition duration-300">Subscribe</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white mt-10 p-5">
+        <h1 class="font-bold text-2xl mb-4">NOSTRA</h1>
+        <p class="mb-4">FOLLOW US ON</p>
+        <div class="flex  gap-4 text-3xl">
+            <i class="fa-brands fa-instagram text-black-500"></i>
+            <i class="fa-brands fa-twitter text-black-500"></i> 
+            <i class="fa-brands fa-facebook text-black-500"></i>
+        </div>
+        <p class="mt-4">@nostra.com</p>
+    </footer>
+
+    <script src="collections.js"></script>
+    
+
+</body>
+</html>
